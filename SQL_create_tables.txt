@@ -1,0 +1,7 @@
+CREATE TABLE `inline`.`blog` ( `id` INT NOT NULL , `userId` INT NOT NULL , `title` TEXT NOT NULL , `body` TEXT NOT NULL );
+​CREATE TABLE `inline`.`comments` ( `id` INT NOT NULL , `postId` INT NOT NULL , `name` TEXT NOT NULL , `email` TEXT NOT NULL , `body` TEXT NOT NULL );
+ALTER TABLE `blog` ADD INDEX(`id`);
+ALTER TABLE `comments` ADD INDEX(`id`);
+ALTER TABLE `comments` ADD INDEX(`postId`);
+
+
